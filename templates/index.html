@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Natty Prediction System</title>
+    <style>
+        body {
+            background: #0f172a;
+            color: #e5e7eb;
+            font-family: Arial, sans-serif;
+        }
+        .card {
+            width: 520px;
+            margin: 40px auto;
+            padding: 25px;
+            background: #020617;
+            border-radius: 10px;
+        }
+        input, button {
+            width: 100%;
+            margin: 6px 0;
+            padding: 8px;
+            border-radius: 6px;
+            border: none;
+        }
+        button {
+            background: #22c55e;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .result {
+            margin-top: 15px;
+            padding: 12px;
+            background: #020617;
+            border-left: 4px solid #22c55e;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h2>Natty Prediction System</h2>
+
+    <form method="POST">
+        <input name="age" placeholder="Age" required>
+        <input name="height" placeholder="Height (cm)" required>
+        <input name="weight" placeholder="Weight (kg)" required>
+        <input name="bodyfat" placeholder="Body Fat (%)" required>
+        <input name="lean_mass" placeholder="Lean Mass (kg)" required>
+        <input name="testosterone" placeholder="Testosterone (ng/dL)" required>
+        <input name="lh" placeholder="LH" required>
+        <input name="fsh" placeholder="FSH" required>
+        <input name="hdl" placeholder="HDL" required>
+        <input name="hemoglobin" placeholder="Hemoglobin" required>
+
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if prediction %}
+    <div class="result">
+        <p><strong>Status:</strong> {{ prediction }}</p>
+        <p><strong>Natural Probability:</strong> {{ confidence }}%</p>
+    </div>
+    {% endif %}
+</div>
+
+</body>
+</html>
