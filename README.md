@@ -11,7 +11,7 @@ This project demonstrates the practical application of machine learning for clas
 The Natural Status ML Prediction System analyzes athlete biomarker and body composition data to generate:
 
 ✔ Natural Probability Score  
-✔ Final Status Classification (NATURAL / UNNATURAL)
+✔ Final Status Classification (NATURAL / UNNATURAL).
 
 The system simulates a professional evaluation pipeline inspired by analytical screening tools.
 
