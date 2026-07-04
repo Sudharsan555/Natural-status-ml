@@ -6,7 +6,7 @@ This project demonstrates the practical application of machine learning for clas
 
 ---
 
-## 🚀 Project Overview
+## 🚀 Project Overview .
 
 The Natural Status ML Prediction System analyzes athlete biomarker and body composition data to generate:
 
